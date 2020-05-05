@@ -1,0 +1,96 @@
+{
+  "properties": {
+    "targetScope": "subscription",
+    "parameters": {
+      "workspaceName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "LogAnalytics Workspace Name",
+          "description": "Specifies the name of the workspace."
+        },
+        "allowedValues": []
+      },
+      "ascOwnerEmail": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Email Notifications (security center)",
+          "description": "Email of the administrator who should be notified about Azure Security Center alert"
+        },
+        "allowedValues": []
+      },
+      "ascOwnerContact": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Phone Notifications (security center)",
+          "description": "Phone number of the administrator should be notified about Azure Security Center alert"
+        },
+        "allowedValues": []
+      },
+      "WorkspaceRGName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "WorkspaceRGName",
+          "description": "This is a blueprint parameter that any artifact can reference. We'll display these descriptions for you in the info bubble. Supply principal IDs for the users,groups, or service principals for the RBAC assignment.",
+          "strongType": "WorkspaceRGName"
+        }
+      },
+      "location": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Location",
+          "description": "Specifies the location in which to create the workspace."
+        },
+        "allowedValues": [
+          "australiacentral",
+          "australiaeast",
+          "australiasoutheast",
+          "brazilsouth",
+          "canadacentral",
+          "centralindia",
+          "centralus",
+          "eastasia",
+          "eastus",
+          "eastus2",
+          "francecentral",
+          "japaneast",
+          "koreacentral",
+          "northcentralus",
+          "northeurope",
+          "southafricanorth",
+          "southcentralus",
+          "southeastasia",
+          "uksouth",
+          "ukwest",
+          "westcentralus",
+          "westeurope",
+          "westus",
+          "westus2"
+        ]
+      },
+      "retention": {
+        "type": "int",
+        "metadata": {
+          "displayName": "Log Analytics Retention (days)",
+          "description": "Data retention in Log Analytics workspace"
+        },
+        "defaultValue": 90
+      },
+      "automationAccountName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Automation Account Name",
+          "description": "Automation account name"
+        },
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "metadata": {
+          "displayName": "RG-workspace"
+        },
+        "dependsOn": []
+      }
+    }
+  }
+}
