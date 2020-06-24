@@ -12,12 +12,11 @@
       "parameters": {
         "workspaceName": {
           "type": "string",
-          "defaultValue": "azsec-shared-workspace",
           "metadata": {
             "description": "Name of the central Log Analytics workspace that stores security event and data collected by Azure Security Center"
           }
         },
-        "ascOwnerEmail": {
+        "EmailForNotifications": {
           "type": "string",
           "metadata": {
             "description": "Email of the administrator who should be notified about Azure Security Center alert"
@@ -65,7 +64,7 @@
           "apiVersion": "2017-08-01-preview",
           "name": "default1",
           "properties": {
-            "email": "[parameters('ascOwnerEmail')]",
+            "email": "[parameters('EmailForNotifications')]",
             "phone": "[parameters('ascOwnerContact')]",
             "alertNotifications": "[variables('highSeverityAlertNotification')]",
             "alertsToAdmins": "[variables('subscriptionOwnerNotification')]"
@@ -163,8 +162,8 @@
       "workspaceName": {
         "value": "[parameters('workspaceName')]"
       },
-      "ascOwnerEmail": {
-        "value": "[parameters('ascOwnerEmail')]"
+      "EmailForNotifications": {
+        "value": "[parameters('EmailForNotifications')]"
       },
       "ascOwnerContact": {
         "value": "[parameters('ascOwnerContact')]"

@@ -10,11 +10,11 @@
         },
         "allowedValues": []
       },
-      "ascOwnerEmail": {
+      "EmailForNotifications": {
         "type": "string",
         "metadata": {
-          "displayName": "Email Notifications (security center)",
-          "description": "Email of the administrator who should be notified about Azure Security Center alert"
+          "displayName": "Email Notifications (security center and Sentinel)",
+          "description": "Email of the administrator who should be notified about Azure Security Center and Sentine alerts"
         },
         "allowedValues": []
       },
@@ -82,6 +82,15 @@
           "description": "Automation account name"
         },
         "allowedValues": []
+      },
+      "LogicAppName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Logic App Name",
+          "description": "Name for the logic app that will be created as a sentinel playbook to send email notifications"
+        },
+        "minLength": 1,
+        "defaultValue": "Sentinel-SendEmail-LogicApp"
       }
     },
     "resourceGroups": {
