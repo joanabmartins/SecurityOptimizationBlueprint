@@ -21,11 +21,11 @@ Import-AzBlueprintWithArtifact -Name 'SecurityOptimizationBlueprint' -Subscripti
 **3. Assign the blueprint to your subscription**
 Go to the blueprint that you have created in the portal and assign it to the subscription, filling the parameters required.
 
-[[./media/blueprint-definition.PNG|ALT TEXT]]
+[[media/blueprint-definition.PNG|ALT TEXT]]
 
-[[/media/assign-blueprint-button.PNG]]
+[[media/assign-blueprint-button.PNG]]
  
-[[./media/assign-blueprint.PNG|alt=octocat]]
+[[media/assign-blueprint.PNG|alt=octocat]]
  
  
  "FastTrack for Azure are “Professional Services” subject to the “Professional Services Terms” in the Online Services Terms and Online Services Data Protection Addendum. 
