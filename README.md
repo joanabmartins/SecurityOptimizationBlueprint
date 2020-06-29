@@ -12,10 +12,10 @@ Import-AzBlueprintWithArtifact -Name 'SecurityOptimizationBlueprint' -Subscripti
 
 **2. Publish blueprint**
 ```powershell-interactive
-Import-Module Az.Blueprint
-Connect-AzAccount
-Import-AzBlueprintWithArtifact -Name 'SecurityOptimizationBlueprint' -SubscriptionId 'SUBSCRIPTIONID' -InputPath 'c:\SecurityOptBlueprint'
-}
+$blueprint = Get-AzBlueprint -SubscriptionId "SUBSCRIPTIONID" -Name "SecurityOptimizationBlueprint"
+
+
+Publish-AzBlueprint -Blueprint $blueprint -Version '1'
 ```
 
 **3. Assign the blueprint to your subscription in the portal**
@@ -43,8 +43,11 @@ Go to the blueprint that you have created in the portal and assign it to the sub
 </p>
  
  
- 
- 
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
  
  
 >  "FastTrack for Azure are “Professional Services” subject to the “Professional Services Terms” in the Online Services Terms and Online Services Data Protection Addendum. This document is provided “AS-IS,” WITHOUT WARRANTY OF ANY KIND. Microsoft disclaims all express, implied or statutory warranties, including warranties of quality, title, non-infringement, merchantability and fitness for a particular purpose. 
