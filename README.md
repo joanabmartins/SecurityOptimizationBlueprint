@@ -37,5 +37,14 @@ Go to the blueprint that you have created in the portal and assign it to the sub
   <img src="./media/assign-blueprint.PNG" width="500" title="">
 </p>
 
+  * Wait for the assignment to be succeeded.
+ <p align="center">
+  <img src="./media/assignment-succeeded.PNG" width="500" title="">
+</p>
+ 
+ 
+ 
+ 
+ 
  
 >  "FastTrack for Azure are “Professional Services” subject to the “Professional Services Terms” in the Online Services Terms and Online Services Data Protection Addendum. This document is provided “AS-IS,” WITHOUT WARRANTY OF ANY KIND. Microsoft disclaims all express, implied or statutory warranties, including warranties of quality, title, non-infringement, merchantability and fitness for a particular purpose. 
