@@ -6,15 +6,12 @@ To deploy this blueprint you can use Powershell:
 Import-Module Az.Blueprint
 Connect-AzAccount
 Import-AzBlueprintWithArtifact -Name 'SecurityOptimizationBlueprint' -SubscriptionId 'SUBSCRIPTIONID' -InputPath 'c:\SecurityOptBlueprint'
-}
 ```
 
 
 **2. Publish blueprint**
 ```powershell-interactive
 $blueprint = Get-AzBlueprint -SubscriptionId "SUBSCRIPTIONID" -Name "SecurityOptimizationBlueprint"
-
-
 Publish-AzBlueprint -Blueprint $blueprint -Version '1'
 ```
 
