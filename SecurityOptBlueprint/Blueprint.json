@@ -96,7 +96,7 @@
     "resourceGroups": {
       "ResourceGroup": {
         "metadata": {
-          "displayName": "RG-workspace"
+          "displayName": "ResourceGroup"
         },
         "dependsOn": []
       }
