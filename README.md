@@ -21,14 +21,6 @@ Import-AzBlueprintWithArtifact -Name 'SecurityOptimizationBlueprint' -Subscripti
 **3. Assign the blueprint to your subscription in the portal**
 
 Go to the blueprint that you have created in the portal and assign it to the subscription, filling the parameters required.
-
-![Alt text](./media/blueprint-definition.PNG "Go to the blueprint that you have just created.")
-
-![Alt text](./media/assign-blueprint-button.PNG "")
-
-
-![Alt text](./media/assign-blueprint.PNG "Fill in the parameters.")
-
  
  * Go to the blueprint that you have just created.
  <p align="center">
